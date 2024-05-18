@@ -22,7 +22,7 @@ port = str(os.getenv('DB_PORT'))
 
 #engine = create_engine("hana+hdbcli://{}:{}@{}:{}".format(username, quote(passwd), hostname, port))
 #db_connection = "hana+hdbcli://Username:Password@Host:port/tennat_db_name"
-engine = create_engine('hana+hdbcli://sivramakris:Deloitte123$@usawcon00014.us.deloitte.com/DS4')
+engine = create_engine('hana+hdbcli://{username}:{passwd}@{hostname}/DS4')
 insp = inspect(engine)  # will be a HANAInspector
 #print(insp.get_table_names('SAPS4H'))
 
